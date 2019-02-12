@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper cyan darken-3">
+          <a href="#" class="brand-logo">Bryant</a>
+          <ul id="dropdown" class="right">
+            <li><a href="#about-section" class="about-section">About</a></li>
+            <li><a href="#portfolio-section" class="portfolio-section">Travels</a></li>
+            <li><a href="#quotes-section" class="quotes-section">Quotes</a></li>
+            <li><a href="#contact-section" class="contact-section">Contact</a></li>
+          </ul>
+          <a class="dropdown-trigger hide-on-large-only right" href="#" data-target="dropdown">
+            <i class="material-icons">menu</i>
+            <!-- Dropdown links need to be fixed -->
+            <!-- Need to update dropdown-on-med in css -->
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about-section">
+      <div class="bg-img-wrapper">
+        <div class="about-wrapper">
+          <div class="about-box z-depth-4">
+            <h2>About</h2>
+            <p>Tired of working in terrible enterprise applications, this former operations professional has decided to take a leap of faith by enrolling into an immersive software engineering bootcamp with dreams to build better business applications. Let's see how this goes!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio-section">
+      <h2>Travels</h2>
+      <div class="carousel carousel-slider center">
+        <div class="left arrow-box">
+          <a class="prev-slide waves-effect arrow"><i class="material-icons left  middle-indicator-text">navigate_before</i></a>
+        </div>
+        <div class="carousel-item" href="#one!">
+          <img src="./images/kusama.jpeg" alt="kusama-art-pic">
+        </div>
+        <div class="carousel-item" href="#two!">
+          <img src="./images/golden_temple.jpeg" alt="golden-temple-pic">
+        </div>
+        <div class="carousel-item" href="#three!">
+          <img src="./images/onsen.jpg" alt="onsen-pic">
+        </div>
+        <div class="carousel-item" href="#four!">
+          <img src="./images/chihuly_glass.jpeg" alt="chihuly-glass-pic">
+        </div>
+        <div class="right arrow-box">
+          <a class="next-slide waves-effect arrow"><i class="material-icons right middle-indicator-text">navigate_next</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="quotes-section">
+      <h2>Testimonials</h2>
+      <div class="quote-box">
+        <div class="quote active-quote">
+          <h2>"This project looks incomplete."</h2>
+          <h3>- WDI Instructors</h3>
+        </div>
+        <div class="quote">
+          <h2>"I definitely ran out of time."</h2>
+          <h3>- Bryant</h3>
+        </div>
+        <div class="quote">
+          <h2>"This guy definitely procrastinated."</h2>
+          <h3>- Accurate Hater</h3>
+        </div>
+        <div class="quote">
+          <h2>"I haven't seen you since you started bootcamp."</h2>
+          <h3>- Supportive Girlfriend</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section">
+      <div class="contact-box">
+        <h2>Contact Me</h2>
+        <form action="" method="">
+          <div class="input-field">
+            <input type="text" placeholder="Name" class="validate">
+          </div>
+          <div class="input-field">
+            <input type="email" placeholder="Email Address" class="validate">
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Phone Number" class="validate">
+          </div>
+          <div class="input-field">
+            <textarea placeholder="Message" class="materialize-textarea"></textarea>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="cyan darken-3">
+    <div class="footer-copyright">
+      <i class="material-icons">copyright</i>
+      <p>Bryant Pham</p>
+    </div>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/materialize.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

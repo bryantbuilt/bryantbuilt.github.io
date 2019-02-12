@@ -1,0 +1,338 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Fahkwang', sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+/* Header */
+
+.nav-wrapper {
+  padding: 0 64px;
+}
+
+.underline-nav {
+  text-decoration: underline;
+}
+
+/* About Section */
+
+.bg-img-wrapper {
+  height: 170vh;
+  width: inherit;
+  background: url("../images/mt_fuji.jpg");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.about-wrapper {
+  width: inherit;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0);
+  display: flex;
+  padding-top: 100vh;
+  padding-left: 10vw;
+}
+
+.about-box {
+  background-color: #263238;
+  color: white;
+  height: 400px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 64px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Portfolio Section */
+
+#portfolio-section {
+  height: 120vh;
+  background-color: #263238;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 56px;
+
+}
+
+.carousel {
+  height: 100vh;
+}
+
+.carousel-item img {
+  width: 80vw;
+  height: auto;
+}
+
+.arrow-box {
+  height: 100%;
+  width: 200px;
+}
+
+.arrow {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow i {
+  font-size: 64px;
+  color: white;
+}
+
+/* Quotes Section */
+
+#quotes-section {
+  height: 80vh;
+  background-color: #263238;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 56px;
+}
+
+.quote-box {
+  width: 80%;
+  height: 50vh;
+  background-color: #fff;
+  color: #263238;
+  border-radius: 10px;
+}
+
+.quote-box h2 {
+  text-decoration: none;
+}
+
+.quote {
+  display: none;
+  transition: all 1s ease-in;
+  padding: 32px;
+}
+
+.active-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Contact Section */
+
+#contact-section {
+  height: 100vh;
+  width: 100%;
+  background-color:#263238;
+  color: white;
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 800px;
+  height: 600px;
+  border: 2px solid white;
+  border-radius: 10px;
+
+}
+
+.contact-box form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  width: 80%;
+}
+
+/* Footer */
+footer {
+  min-height: 6vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  padding-left: 2em;
+  color: white
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.social-links a {
+  color: white;
+}
+
+/* Media Queries*/
+
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+
+  .bg-img-wrapper {
+    background-attachment: scroll;
+    height: 500px;
+    position: relative;
+  }
+
+  .about-wrapper {
+  width: inherit;
+  height: 0;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0);
+  padding: 0;
+}
+
+  .about-box {
+    font-size: 14px;
+    height: 200px;
+    width: 500px;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: none;
+    border: 1px solid white;
+  }
+
+  .about-box h2 {
+    font-size: 18px;
+  }
+
+  .quote-box h2 {
+    font-size: 28px;
+  }
+
+  .quote-box h3 {
+    font-size: 18px;
+  }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .bg-img-wrapper {
+    background-attachment: scroll;
+    height: 500px;
+    position: relative;
+  }
+
+  .about-wrapper {
+  width: inherit;
+  height: 0;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0);
+  padding: 0;
+}
+
+  .about-box {
+    font-size: 14px;
+    height: auto;
+    width: 100%;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: none;
+    border: 1px solid white;
+  }
+
+  .about-box h2 {
+    font-size: 18px;
+  }
+
+  .quote-box h2 {
+    font-size: 28px;
+  }
+
+  .quote-box h3 {
+    font-size: 18px;
+  }
+
+  #portfolio-section {
+  height: 50vh;
+  background-color: #263238;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-top: 56px;
+  }
+
+  #contact-section {
+  height: 80vh;
+  width: 100%;
+  background-color:#263238;
+  color: white;
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+  .contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  border: 2px solid white;
+  border-radius: 10px;
+  }
+
+  .contact-box form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+
+}
